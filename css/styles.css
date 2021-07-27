@@ -29,9 +29,11 @@ body {
 #login-form input {
   padding: 15px 0px;
   border: 0px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   font-size: 18px;
   margin-bottom: 20px;
+}
+#login-form input:not([type="submit"]) {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   transition: border-bottom 0.3s ease-in-out;
 }
 
@@ -40,4 +42,16 @@ body {
 }
 #login-form input:focus {
   border-color: var(--yellow);
+}
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: not-allowed;
+  border: 0px;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+#login-form a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
 }
